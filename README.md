@@ -118,4 +118,4 @@ async click() {
 ```
 
 #### tips
-除了toast其余方法都是promise结构，可以拿回callback执行完成后的回调结果，前提是得有return。
+除了toast其余方法都是promise结构，可以拿回callback执行完成后的回调结果，前提是得有return。可能有些界面设计的很粗糙，甚至有点不堪入目，你可以fork过去自行修改，哈哈哈。
