@@ -16,8 +16,19 @@
 				>
 					<img v-if="!icon" src="./images/loading.gif" alt="" />
 					<img
-						v-else-if="['success', 'warn', 'error'].includes(icon)"
-						:src="require(`./images/${icon}.svg`)"
+						svg-inline
+						v-else-if="icon === 'success'"
+						src="./images/success.svg"
+					/>
+					<img
+						svg-inline
+						v-else-if="icon === 'warn'"
+						src="./images/success.svg"
+					/>
+					<img
+						svg-inline
+						v-else-if="icon === 'error'"
+						src="./images/error.svg"
 					/>
 					<img v-else :src="`${icon}`" alt="" />
 				</div>
@@ -50,6 +61,7 @@
 </template>
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
+
 export interface VuePupupButton {
 	text: string;
 	color?: string;
@@ -75,11 +87,11 @@ export default class MyPupup extends Vue {
 	@Prop({ default: '' }) public icon!: string;
 	@Prop({ default: 0.4 }) public bgOpacity!: number;
 
+	public timer: any = 0;
+
 	public get isLoadingOrToast() {
 		return this.type === 'loading' || this.type === 'toast';
 	}
-
-	public timer: any = 0;
 
 	public async mounted() {
 		if (this.isLoadingOrToast) {
@@ -171,7 +183,8 @@ export default class MyPupup extends Vue {
 			&.no-message {
 				margin-bottom: 15px;
 			}
-			img {
+			img,
+			svg {
 				height: 40px;
 				width: 40px;
 			}
