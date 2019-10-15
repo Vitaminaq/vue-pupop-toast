@@ -1,24 +1,17 @@
 # vue-pupop-toast
 
-## Project setup
-```
-npm install
+### 一个vue的pupop和toast库 / A Vue toast, pupop UI
+
+#### 安装/install
+```bash
+npm/cnpm install vue-pupop-toast --save / yarn add vue-pupop-toast
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#### 使用/Use
+``` javascript
+// main.js or index.js or .ts
+import 'vue-pupop-toast/dist/vue-pupop-toast.css';
+import VuePupopToast from 'vue-pupop-toast';
 
-### Compiles and minifies for production
+Vue..use(VuePupopToast)
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
