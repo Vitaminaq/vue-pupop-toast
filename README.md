@@ -1,6 +1,7 @@
 # vue-pupop-toast
 
-### 一个vue的pupop和toast库,包括confirm,alert,loading,toast等，欢迎广大网友补充 / a vue toast, pupop UI
+### 用typescript写的一个vue的pupop和toast库,包括confirm,alert,loading,toast等，欢迎广大网友补充，支持ts语法提示。  
+A pupop and toast Library of Vue written with typescript, including confirm, alert, loading, toast, etc. welcome to add, support TS syntax prompt.
 
 #### 安装/install
 ```bash
