@@ -1,6 +1,6 @@
 # vue-pupop-toast
 
-### 一个vue的pupop和toast库 / a vue toast, pupop UI
+### 一个vue的pupop和toast库,包括confirm,alert,loading,toast等，欢迎广大网友补充 / a vue toast, pupop UI
 
 #### 安装/install
 ```bash
@@ -48,6 +48,7 @@ async click() {
   });
 }
 ```
+![confirm](https://raw.githubusercontent.com/Vitaminaq/vue-pupop-toast/master/picture/confirm.png)
 ##### alert 参数配置/ params
 | key  | require |  default |  type | discribe |  
 | :--: | :-----: | :----: | :---: | -------- |  
@@ -69,6 +70,7 @@ async click() {
   });
 }
 ```
+![alert](https://raw.githubusercontent.com/Vitaminaq/vue-pupop-toast/master/picture/alert.png)
 ##### loading 参数配置/ params
 | key  | require |  default |  type | discribe |  
 | :--: | :-----: | :----: | :---: | -------- |  
@@ -90,6 +92,7 @@ async click() {
   });
 }
 ```
+![loading](https://raw.githubusercontent.com/Vitaminaq/vue-pupop-toast/master/picture/loading.png)
 ##### toast 参数配置/ params
 带icon的toast  
 
@@ -109,6 +112,7 @@ async click() {
   });
 }
 ```
+![toast1](https://raw.githubusercontent.com/Vitaminaq/vue-pupop-toast/master/picture/toast1.png)
 简易式的的一段小字体toast  
 example:  
 ``` javascript
@@ -116,6 +120,7 @@ async click() {
   this.$pupop.toast('加载成功', 1000);
 }
 ```
+![toast2](https://raw.githubusercontent.com/Vitaminaq/vue-pupop-toast/master/picture/toast2.png)
 
 #### tips
 除了toast其余方法都是promise结构，可以拿回callback执行完成后的回调结果，前提是得有return。可能有些界面设计的很粗糙，甚至有点不堪入目，你可以fork过去自行修改，哈哈哈。
