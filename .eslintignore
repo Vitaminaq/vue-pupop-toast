@@ -1,0 +1,9 @@
+node_modules/*
+dist/*
+.gitignore
+package.json
+tsconfig.json
+yarn.lock
+README.md
+yarn.lock
+**/images

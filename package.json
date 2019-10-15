@@ -1,0 +1,61 @@
+{
+  "name": "vue-pupop-toast",
+  "description": "A Vue toast, pupop UI",
+  "version": "0.1.0",
+  "author": "Vitaminaq",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "pupop",
+    "toast",
+    "vue-ui"
+  ],
+  "private": false,
+  "main": "dist/vue-pupop-toast.common.js",
+  "module": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-cli-service build --target lib src/index.ts",
+    "lint": "vue-cli-service lint"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "homepage": "https://github.com/Vitaminaq/vue-pupop-toast",
+  "bugs": "https://github.com/Vitaminaq/vue-pupop-toast/issues",
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-property-decorator": "^8.2.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-plugin-typescript": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.18.2",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
