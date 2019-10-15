@@ -75,7 +75,7 @@ export const alert = (options: AlertOptions): Promise<any> => {
 	return hasCallback({ ...options, type: 'alert' });
 };
 
-export const loading = (options: ToastOptions): Promise<any> => {
+export const loading = (options: LoadingOptions): Promise<any> => {
 	return hasCallback({ ...options, type: 'loading' });
 };
 

@@ -1,7 +1,7 @@
 {
   "name": "vue-pupop-toast",
   "description": "A Vue toast, pupop UI",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Vitaminaq",
   "license": "MIT",
   "keywords": [
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Vitaminaq/vue-pupop-toast",
   "bugs": "https://github.com/Vitaminaq/vue-pupop-toast/issues",
+  "typings": "./dist/vue-pupop-toast.d.ts",
   "dependencies": {
     "vue": "^2.6.10",
     "vue-property-decorator": "^8.2.2"
