@@ -14,7 +14,7 @@ npm/cnpm install vue-pupop-toast --save / yarn add vue-pupop-toast
 import 'vue-pupop-toast/dist/vue-pupop-toast.css';
 import VuePupopToast from 'vue-pupop-toast';
 
-Vue..use(VuePupopToast)
+Vue.use(VuePupopToast)
 ```
 
 #### .vue
